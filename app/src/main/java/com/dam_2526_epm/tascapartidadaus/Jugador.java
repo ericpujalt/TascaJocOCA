@@ -4,7 +4,9 @@ public class Jugador extends Persona{
 
     private int idJugador;
 
-    private int casella;
+    private int casella = 0;
+
+    private int atrapat = 0;
 
     public Jugador(String nom, String cognom, int edat, int idJugador, int casella) {
         super(nom, cognom, edat);
@@ -28,6 +30,14 @@ public class Jugador extends Persona{
 
     public void setRecorregut(int casella) {
         this.casella = casella;
+    }
+
+    public int getAtrapat() {
+        return atrapat;
+    }
+
+    public void setAtrapat(int atrapat) {
+        this.atrapat = atrapat;
     }
 
     @Override
